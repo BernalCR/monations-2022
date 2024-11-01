@@ -1,0 +1,1526 @@
+:root{
+	--light_blue: #35e7eb;
+	--magenta: #bf22e7;
+	--dark_blue: #0d1239;
+	--dark_blue_bold: #111640;
+}
+
+footer{
+	display: none;
+	visibility: hidden;
+}
+.date_sup{
+	font-size: 0.5em;
+	top: -1em;
+}
+.z_index{
+	z-index: 2;
+	position: relative;
+}
+.titles_executives{
+	font-size: clamp(0.3em, 1vw, 3em);
+	display: block;
+}
+.sold_out{
+	font-size: clamp(2.5em, 5vw, 3.8em);
+	font-family: 'MADE TOMMY Black_PERSONAL USE' !important;
+	color: #fff;
+	line-height: 1.1em;
+	letter-spacing: 0.05em;
+}
+@font-face {
+	font-family: 'MADE TOMMY Black_PERSONAL USE';
+	src: url('https://monatglobal.com/wp-content/uploads/fonts/MADE TOMMY Black_PERSONAL USE.otf');
+   /* IE9 Compat Modes */
+}
+.p_medium {
+	font-size: 1.3em !important;
+}
+.med_txt_blue {
+	font-size: clamp(1.3em, 2.5vw, 1.9em);
+	line-height: 1.3em;
+}
+.dark_blue_p {
+	color: var(--dark_blue) !important;
+}
+.magenta_txt {
+	color: var(--magenta) !important;
+}
+.light_blue_p {
+	color: var(--light_blue) !important;
+}
+.dark_blue_b {
+	background-color: var(--dark_blue_bold);
+}
+#counter {
+	position: relative;
+	z-index: 2;
+}
+@keyframes pulse_1 {
+	from {
+	   opacity: 0;
+   }
+	to {
+	   opacity: 0.7;
+   }
+}
+@keyframes pulse_2 {
+	from {
+	   opacity: 0.7;
+   }
+	to {
+	   opacity: 0;
+   }
+}
+.grad_position{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 40vh;
+	margin-left: auto;
+	margin-right: auto;
+	height: 30vh;
+	width: 80%;
+	opacity: 0.8;
+	filter: blur(20px);
+	z-index: -10;
+}
+.grad_position_2{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	height: 60vh;
+	width: 80%;
+	opacity: 0.3;
+	filter: blur(50px);
+	z-index: -1;
+}
+.grad_position_3 {
+	position: absolute;
+	top: clamp(7.699999999999999em, -40vw, 1000em);
+	left: -20px;
+	width: clamp(20.3em, 40vw, 1000em);
+	opacity: 0.8;
+	filter: blur(10px);
+	z-index: 2;
+}
+.grad_position_4 {
+	position: absolute;
+	left: -20px;
+	width: clamp(20.3em, 20vw, 1000em);
+	opacity: 0.9;
+	filter: blur(10px);
+	z-index: 2;
+}
+.grad_position_5{
+	position: absolute;
+	top:25em;
+	left: -20px;
+	width: 100%;
+	height: 70vh;
+	opacity: 0.1;
+	filter: blur(50px);
+	z-index: 2;
+}
+.grad_position_6{
+	position: absolute;
+	right: -4em;
+	width: clamp(20.3em, 20vw, 1000em);
+	opacity: 0.7;
+	filter: blur(40px);
+	z-index: 2;
+}
+.grad_position_7{
+	position: absolute;
+	left: -4em;
+	width: clamp(20.3em, 20vw, 1000em);
+	opacity: 0.7;
+	filter: blur(40px);
+	z-index: 2;
+}
+.grad_position_8{
+	position: absolute;
+	top: 40em;
+	left: -4em;
+	width: 100vw;
+	opacity: 0.7;
+	filter: blur(40px);
+	z-index: 2;
+}
+#wpadminbar {
+	display: none;
+}
+.tommy_Black {
+	font-family: 'MADE TOMMY Black_PERSONAL USE' !important;
+}
+.spark_img {
+	background-image: url(https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/sparkle-min.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: auto;
+}
+#speakers {
+}
+p {
+	margin-bottom: 0 !important;
+	color: var(--dark_blue);
+}
+body {
+	overflow-x: hidden !important;
+}
+@keyframes fade-in {
+	from {
+		opacity: 0;
+   }
+	to {
+		opacity: 1;
+   }
+}
+.grad_bkgnd {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+/* ------------------ Header & ham menu --------------------*/
+#header_mu22 {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+}
+#header_mu22>#main_menu, #header_mu22>#second_menu {
+	z-index: 1;
+	position: relative;
+}
+#header_mu22 .mu22_logo, #footer_mu22 .mu22_logo {
+	width: 12em;
+}
+#main_menu, #footer_mu22 {
+	background-color: #4d418a;
+}
+#overlay_top_h, #overlay_bottom_h {
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+}
+#overlay_top_h {
+	z-index: 30;
+}
+#overlay_bottom_h {
+	z-index: 20;
+}
+#overlay_top_h.active, #overlay_bottom_h.active {
+	display: block;
+}
+.dropdownMenu {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: calc(10% + 353px);
+	overflow-y: hidden;
+	background-color: #fff;
+	max-height: 0;
+	transition: all 400ms ease-in-out;
+	scroll-behavior: smooth;
+	z-index: 0;
+}
+#navbar_agenda ul, #ham_menu ul, #second_menu ul, .off_speakers ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#ham_menu ul>li {
+	margin: 0;
+	border: 0;
+	width: 100%;
+	color: var(--dark_blue);
+}
+.main_list_menu>li a {
+	font-size: 2em;
+	font-family: 'MADE TOMMY Black_PERSONAL USE' !important;
+	width: 100%;
+	line-height: 1.2em;
+	cursor: pointer;
+}
+.main_list_menu > li a {
+	width: 100%;
+	padding: 0.5em 1em 0.5em;
+	display: block;
+}
+.main_list_menu>li:hover {
+	background-color: #f1f1f1;
+	border-left: 4px solid var(--light_blue) !important;
+}
+.main_list_menu ul li {
+	font-size: 1em;
+	padding: 0 2em 0.2em;
+}
+.dropdownMenu.active {
+	border-bottom: 7px solid var(--light_blue);
+	max-height: 100vh !important;
+	overflow-y: auto !important;
+}
+#countries_list {
+	display: grid;
+	gap: 1em 0;
+	grid-template-columns: repeat(2, 1fr);
+	overflow-y: hidden;
+	transition: all .3s ease-in-out;
+	padding-top: 30px;
+}
+.padding_menu {
+	padding-right: 2em;
+	padding-left: 2em;
+}
+.dropdownMenu .country_card {
+	padding: 1em 1em 1em 1.5em;
+}
+.dropdownMenu .country_card:hover {
+	background-color: #f7f7f7;
+}
+.country_card img {
+	height: 15px;
+	width: 28px;
+	margin-right: 1em;
+}
+.country_card p {
+	font-size: 0.9em;
+	font-family: "SuisseIntl-Regular";
+}
+#chooseRBox {
+	border-top: 1px solid #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+	padding-top: 1.3em;
+	padding-bottom: 1.2em;
+}
+.social_icons {
+	width: 1.7em;
+	margin-left: 1.1em;
+}
+#currentLocation {
+	margin: 0 2em;
+	cursor: pointer;
+}
+#currentLocation p {
+	color: #fff;
+}
+.arrow_icon {
+	width: 1.3em;
+}
+.social_row {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+.dropdownMenu .social_row {
+	background-color: #f7f7f7;
+	border-top: 2px solid #eeeeee;
+}
+.bkgnd_w {
+	background-color: #fff;
+}
+.register_banner {
+	padding-right: 2em;
+	padding-left: 2em;
+	background-color: var(--light_blue);
+	height: 100%;
+	transition: all 3s ease-in-out;
+}
+.register_banner p {
+	position: relative;
+	font-size: 1.5rem;
+}
+#second_menu {
+	overflow-y: hidden;
+	max-height: 0em;
+	transition: all .25s ease-in-out;
+}
+#second_menu.active {
+	max-height: 20em;
+	box-shadow: 0 0 4px 0 rgb(0 0 0 / 13%);
+}
+#second_menu a {
+	padding: 1em 0;
+	display: block;
+	font-size: 0.9em;
+	letter-spacing: 0.14em;
+	width: 100%;
+	border-bottom: 5px solid transparent;
+	text-align: center;
+}
+#second_menu li {
+	width: 20%;
+}
+#second_menu a:hover, #second_menu .active {
+	border-bottom: 5px solid var(--light_blue);
+}
+/*hamburguer animation*/
+.ham {
+	width: 4em;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transition: transform 400ms;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.hamRotate.active {
+	transform: rotate(45deg);
+}
+.hamRotate180.active {
+	transform: rotate(180deg);
+}
+.line {
+	fill: none;
+	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+	stroke: #fff;
+	stroke-width: 5.5;
+	stroke-linecap: round;
+}
+.ham8 .top {
+	stroke-dasharray: 40 160;
+}
+.ham8 .middle {
+	stroke-dasharray: 40 142;
+	transform-origin: 50%;
+	transition: transform 400ms;
+}
+.ham8 .bottom {
+	stroke-dasharray: 40 85;
+	transform-origin: 50%;
+	transition: transform 400ms, stroke-dashoffset 400ms;
+}
+.ham8.active .top {
+	stroke-dashoffset: -64px;
+}
+.ham8.active .middle {
+	transform: rotate(90deg);
+}
+.ham8.active .bottom {
+	stroke-dashoffset: -64px;
+}
+/* ------------------ INTRO -----------------*/
+#stadium {
+	position: relative;
+}
+#stadium .grad_bkgnd {
+	min-height: 80vh;
+	background-image: url(https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/Monations_main-bakgnd.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#stadium h1 {
+	font-size: clamp(3em, 7vw, 5em);
+	line-height: 1em;
+	letter-spacing: 0.05em;
+}
+.event_price {
+	font-size: clamp(3em, 7vw, 5em);
+	margin-right: 0.8em;
+}
+.event_price sup{
+	font-size: 0.3em;
+	top: -1.8em;
+}
+.monations_btn {
+	background-color: var(--light_blue) !important;
+	color: var(--dark_blue) !important;
+	border: none !important;
+	border-radius: 1px !important;
+	padding: 1.1em 0 1em;
+	width: 15em;
+	display: block;
+	text-align: center;
+	font-size: .95em !important;
+	font-family: 'SuisseIntl-Medium', Fallback, sans-serif;
+	letter-spacing: 1.5px;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+.monations_btn p {
+	position: relative;
+	color: var(--dark_blue) !important;
+	font-size: .95em !important;
+	font-family: 'SuisseIntl-Medium', Fallback, sans-serif;
+	letter-spacing: 1.5px;
+}
+.slide_hover {
+	position: relative;
+	overflow: hidden;
+}
+.slide_hover:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	transform: translateX(-100%);
+	z-index: 0;
+	transition: all .25s ease-in-out;
+}
+.slide_hover:hover:before, .slide_hover:focus:before {
+	transform: translateX(0);
+}
+.hr_gradient {
+	height: 5px;
+	margin-left: 0;
+	border: none;
+	max-width: 35em;
+	width: 100%;
+	background: linear-gradient(95deg, rgba(99, 97, 236, 1) 0%, rgba(158, 140, 237, 1) 17%, rgba(161, 190, 230, 1) 33%, rgba(159, 221, 183, 1) 57%, rgba(134, 97, 236, 1) 100%);
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/* ----------- Text loop ------------*/
+.bkgnd_loop {
+	background: linear-gradient(-4deg, rgb(17 22 64) 50%, rgba(249, 249, 249, 1) 50%);
+	padding: 5em 0;
+	display: flex;
+	align-items: center;
+}
+.loop_holder {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+	z-index: 15;
+	transform: rotate(-4deg) skew(-5deg, 0);
+}
+.loop_holder>div {
+	display: flex;
+	animation: textLoop 20s linear infinite;
+}
+.loop_holder p {
+	font-family: "SuisseIntl-Bold";
+	color: #fff;
+	font-size: 2.8em;
+	text-align: center;
+	line-height: 1em;
+	padding: 0.3em 1em 0.1em;
+	letter-spacing: 0.03em;
+}
+.loop_holder p:nth-child(even) {
+	background-color: var(--magenta);
+	color: var(--light_blue);
+}
+.loop_holder p:nth-child(odd) {
+	background-color: var(--light_blue);
+	color: var(--magenta);
+}
+@keyframes textLoop {
+	from {
+		transform: translateX(-50%);
+   }
+	to {
+		transform: translateX(0%);
+   }
+}
+/* ------------------ Counter -----------------*/
+#counter {
+	padding: 10em 0 5em;
+}
+#counter .mu22_logo {
+	width: clamp(21em, 30vw, 30em);
+}
+#counterBox, #counterMarkers {
+	min-width: 45em;
+}
+#counterBox {
+	padding: 2.5em 2.5em 1em 3em;
+	border: 1px solid var(--light_blue);
+}
+#counterMarkers {
+	padding: 2em 2.5em 0em 2.5em;
+}
+#counterBox ul {
+	padding: 0;
+	width: 100%;
+}
+#counterBox ul>div {
+	background-color: #fff;
+	width: 1px;
+	height: 70%;
+	align-self: center;
+	margin-bottom: 10px;
+}
+#counterBox li {
+	font-family: "SuisseIntl-Bold";
+	display: block;
+	font-size: clamp(1em, 6.5vw, 4.5em);
+	color: var(--light_blue);
+	width: 25%;
+	line-height: 0.8em;
+}
+/* switch button */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 34px;
+	background-color: #bb12f1;
+	transition: all .25s ease-in-out;
+}
+.slider:before {
+	position: absolute;
+	border-radius: 50%;
+	content: "";
+	height: 30px;
+	width: 30px;
+	left: 0px;
+	bottom: 0px;
+	background-color: white;
+	transition: all .25s ease-in-out;
+}
+.switch input:checked + .slider {
+	background-color: var(--light_blue);
+}
+.switch input:checked + .slider:before {
+	-webkit-transform: translateX(31px);
+	-ms-transform: translateX(31px);
+	transform: translateX(31px);
+}
+#monationsMode{
+	background-color: var(--light_blue);
+	padding: 0.5em 0.5em 0.5em 2em;
+	border-radius: 3em;
+	margin-top: 3em;
+	transition: all .25s ease-in-out;
+}
+#monationsMode.active{
+	background-color: #bb12f1;
+}
+#monationsMode p{
+	letter-spacing: 0.04em;
+	font-size: 2em;
+	line-height: 0.7em;
+	margin-top: 3px;
+}
+/* ----------- Agenda -------------*/
+.agenda_note{
+	background-color: #eee;
+	padding: 1.5em 0.5em;
+}
+.head_agenda {
+	padding: 11em 0 2em;
+}
+
+.head_agenda p {
+	color: #a09ef6;
+	font-size: clamp(1.5em, 2.5vw, 2em);
+	letter-spacing: 0.07em;
+}
+#navbar_agenda {
+	border-top: 1px solid #4A4D6D;
+}
+#navbar_agenda ul li {
+	color: #fff;
+	font-family: "SuisseIntl-Regular";
+	padding: 1em 2em 0.7em;
+	border-bottom: 5px solid transparent;
+	cursor: pointer;
+}
+#navbar_agenda ul li:hover {
+	border-bottom: 5px solid var(--light_blue);
+}
+#navbar_agenda ul li.active {
+	background-color: var(--light_blue);
+	color: var(--dark_blue);
+}
+.tab_content {
+	display: none;
+}
+.tab_content.active {
+	animation: fade-in 0.5s;
+	display: block;
+}
+.head_tab, .filter_bar_hotels {
+	background-color: #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 1em 0;
+	min-height: 5em;
+	display: flex;
+}
+.title_tab {
+	color: var(--dark_blue);
+	font-size: 1.7em;
+	letter-spacing: 0.04em;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 1em;
+	padding: 0.3em 1em 0.2em 0;
+	border-right: 3px solid #e8e8e8;
+}
+.body_tab, .container_hotels {
+	background-color: #f9f9f9;
+	padding: 3em 0 5em;
+	min-height: 55vh;
+}
+.agenda_row {
+	background-color: #fff;
+	box-shadow: 1px 0px 2px 1px #d2d0e48a;
+}
+.agenda_row:not(:first-child) {
+	margin-top: 0.7em;
+}
+.agenda_row>div {
+	padding: 1em 3em 1em 2.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.agenda_row>div:first-child {
+	width: 35%;
+	transition: all .25s ease-in-out;
+	border-left: 5px solid var(--light_blue);
+}
+.agenda_row:hover>div:first-child {
+	background-color: var(--light_blue);
+}
+.agenda_row>div:not(:first-child) {
+	width: 32.5%;
+	border-left: 3px solid #ededed;
+	margin: 1.2em 0;
+}
+.categories_agenda>div {
+	width: 32.5%;
+	margin: 0.8em 0;
+}
+.categories_agenda>div:last-child {
+	border-left: 3px solid #ededed;
+}
+.category_agenda_img {
+	width: 0.9em;
+	margin: 0 0.6em;
+}
+.categories_agenda p {
+	color: var(--dark_blue);
+	font-family: "SuisseIntl-Bold";
+	font-size: 0.9em;
+}
+.event_time {
+	background-color: #C3F6F9;
+	padding: 0.3em 1em;
+	border-radius: 4em;
+	margin-top: 0.5em;
+	font-size: 1em;
+}
+.event_name {
+	font-size: 1.4em;
+}
+.agenda_box {
+	margin-top: 3em;
+}
+/* ------------- offcanvas -------------- */
+.off_speakers, #off_hotels, #offTravel {
+	background-color: #fff;
+	height: 100vh;
+	padding-right: 4em;
+	padding-left: 4em;
+	position: fixed;
+	top: 0;
+	padding-top: 2em;
+	width: calc(10% + 351px);
+	z-index: 30;
+	border-bottom: 7px solid var(--light_blue);
+	overflow-y: auto;
+}
+.off_speakers *, #off_hotels *, #offTravel * {
+	opacity: 0;
+}
+#off_hotels, #offTravel {
+	right: 0;
+	transform: translate(100%);
+}
+/* ------------- K Speakers -------------- */
+.speaker1 {
+	background-image: url(https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/tony-Robbins.png);
+	background-size: 55%;
+	background-repeat: no-repeat;
+	background-position: 70% 50%;
+}
+.speaker2 {
+	background-image: url(https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/todd-duncan.png);
+	background-size: 55%;
+	background-repeat: no-repeat;
+	background-position: 30% 50%;
+}
+.speaker_module {
+	height: 85vh;
+	width: 100vw;
+}
+.speaker_name {
+	color: #fff;
+	font-size: clamp(3.5em, 5vw,4.7em);
+	letter-spacing: 0.03em;
+	line-height: 0.9em;
+}
+.speaker_module p span {
+	font-size: 70%;
+}
+.off_speakers .speaker_name {
+	line-height: 0.6em;
+	transform: rotate(-4deg) skew(-5deg, 0);
+	letter-spacing: 0.01em;
+	margin-bottom: 0.5em !important;
+	margin-top: 0.1em !important;
+}
+.off_speakers .speaker_name span {
+	color: #4d418a !important;
+}
+#offSpeaker1 {
+	right: 0;
+	transform: translate(100%);
+}
+#offSpeaker2 {
+	left: 0;
+	transform: translate(-100%);
+}
+.off_speakers ul li::before {
+	content: "\2022";
+	color: var(--light_blue);
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+}
+.off_speakers ul li {
+	font-family: "SuisseIntl-Bold";
+	font-size: 1.3em;
+	margin-bottom: 0.25em;
+}
+.close_canvas {
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+	cursor: pointer;
+}
+.dropdownMenu #closeRegions {
+	margin-bottom: 0;
+	position: absolute;
+	right: 0;
+	top: 10%;
+	padding-right: 0.8em;
+}
+/* ------------- E Speakers -------------- */
+#executive-speakers {
+	padding: 12em 0 7em;
+}
+#executive-speakers .speaker_name {
+	margin-bottom: 10% !important;
+	font-size: 2.5em;
+}
+.luis_img, .stuart_img, .ray_img {
+	width: min(90%, 40em);
+	height: 55vh;
+	background-size: 95%;
+}
+.luis_img {
+	background-image: url(https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/sr_luis_urdaneta.png);
+	margin-bottom: 4em;
+}
+.stuart_img {
+	background-image: url(https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/stuart-MACMILLAN.png);
+}
+.ray_img {
+	background-image: url(https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/ray_urdaneta.png);
+}
+/* ------------- f Speakers -------------- */
+#field-speakers{
+	padding-top: 12em;
+}
+#field-speakers p.section_title{
+	padding: 25vh 0;
+}
+/* Why attend */
+#attend {
+	padding: 6em 0;
+	background-image: url(https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/gradients-test2-scaled.jpg);
+	background-size: 100%;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+.section_title {
+	font-size: clamp(2.5em, 5vw, 3.8em);
+	font-family: 'MADE TOMMY Black_PERSONAL USE' !important;
+	color: #fff;
+	line-height: 1.1em;
+	letter-spacing: 0.05em;
+	margin-top: 0;
+}
+.attend_row img {
+	width: 100%;
+	height: auto;
+	padding: 20px;
+}
+.attend_row {
+	padding-left: 1rem;
+	list-style: none;
+}
+.attend_row li {
+	flex-shrink: 0;
+	width: clamp(500px, 60vw, 800px);
+	padding-right: 1rem;
+}
+.attend_module_t {
+	padding: 0 7em;
+}
+.attend_module_t div {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/spark-numbers.png');
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	height: 1.8em;
+	width: 1.8em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0.4em;
+	font-family: "SuisseIntl-Bold";
+	font-size: 6em;
+}
+.attend_row {
+	display: flex;
+}
+.attend_row:not(.last) {
+	padding-bottom: 4rem;
+}
+/* -------------------- Hotels -------------------- */
+#hotels .grad_bkgnd {
+	padding: 11em 0 6em;
+}
+#hotels .col_65 p {
+	letter-spacing: 0.06em;
+}
+#hotels img {
+	width: 100%;
+}
+#filter_icon {
+	width: 1.1em;
+	margin-left: 1em;
+}
+#closeFilter, #filterBox {
+	cursor: pointer;
+}
+.card_hotel {
+	flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	position: relative;
+	animation: fade-in 0.5s;
+}
+.card_hotel:hover .text_module_hotel {
+	background-color: var(--light_blue);
+}
+.card_hotel:hover .hotel_btn {
+	background-color: #fff !important;
+}
+#soldOut_hotels .card_hotel {
+	pointer-events: none;
+}
+#soldOut_hotels .card_hotel:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(245, 245, 245, 0.5) 
+}
+#soldOut_hotels .image_module_hotel:before {
+	content: "SOLD OUT";
+	position: absolute;
+	bottom: 0;
+	color: #f9f9f9;
+	width: 100%;
+	font-family: "SuisseIntl-Bold";
+	text-align: center;
+	letter-spacing: 0.05em;
+	padding: 1.1em 0 0.9em;
+	background-color: #4d418a;
+	z-index: 1;
+	font-size: 1.4rem;
+}
+#soldOut_hotels .text_module_hotel {
+	border-top: none;
+}
+.image_module_hotel {
+	height: 15em;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.text_module_hotel {
+	transition: all .2s ease-in-out;
+	width: 100%;
+	flex-grow: 3;
+	border-top: 4px solid var(--light_blue);
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.13);
+	background-color: #fff;
+	padding: 2.5em 2vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.label_hotel {
+	background-color: #fff;
+	color: #30284d;
+	position: relative;
+	text-align: center;
+	padding: 0.6em 1em 0.25em 1em;
+	font-size: 0.8em;
+	font-family: "SuisseIntl-Regular";
+	letter-spacing: 0.1em;
+	margin-top: 1.7em;
+	border-bottom: 2px solid #36e7eb;
+}
+
+.hotel_btn {
+	margin: 25px 0 0;
+	width: 100%;
+	pointer-events: none;
+}
+.hotel_name {
+	font-size: 1em;
+}
+.hotel_address {
+	font-size: 0.85em;
+	margin-top: 5px;
+	text-transform: uppercase;
+}
+.hotel_rate {
+	font-size: 0.65em;
+	text-align: center;
+	margin-top: 20px;
+}
+.hotel_rate>span {
+	background-color: #c4f7fa;
+	padding: 0.5em 0.6em 0.4em;
+	border-radius: 1em;
+	font-family: "SuisseIntl-Medium";
+	font-size: 1.1em;
+	margin-left: 0.5em;
+}
+#hotels_box>div {
+	gap: 2vw;
+}
+#off_hotels label {
+	margin-bottom: 1em;
+	font-family: "SuisseIntl-Light";
+	color: var(--dark_blue);
+	font-size: 1.15em;
+}
+#off_hotels input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	padding: 3px;
+	background-clip: content-box;
+	border-radius: 50%;
+	border: 1px solid var(--dark_blue);
+	margin-right: 0.7em;
+	margin-bottom: -0.34999999999999964em;
+	outline: none !important;
+}
+#off_hotels input:checked {
+	background-color: var(--light_blue);
+}
+#filter_applied p {
+	padding: 0.5em 1em;
+	background-color: #c3f6f9;
+	border-radius: 2em;
+	margin-left: 2em;
+	font-size: 0.8em;
+	animation: fade-in 0.5s;
+}
+#filter_applied span {
+	background-color: #fff;
+	padding: 0.1em 0.5em;
+	border-radius: 2em;
+	margin-left: 0.6em;
+}
+.soldOut_title {
+	margin: 2em 0 1em;
+	font-family: "SuisseIntl-Bold";
+	font-size: 3em;
+}
+#img_hotel_1 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/Courtyard-st-Louis-Downtown-West-.jpg');
+}
+#img_hotel_2 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/Hampton-Inn-St.-Louis-Downtown-At-the-Gateway-Arch.jpeg');
+}
+#img_hotel_3 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/Holiday-Inn-st-Louis-Downtown.jpg');
+}
+#img_hotel_4 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/hyattregencyst-louisatthearch.jpeg');
+}
+#img_hotel_5 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/hyattregencyst-louisatthearch.jpeg');
+}
+#img_hotel_6 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/Le-Méridien-St.-Louis-Downtown-.jpg');
+}
+#img_hotel_7 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/Live-By-Loews.jpg');
+}
+#img_hotel_8 {
+	background-image: url('https://monatglobal.com/wp-content/uploads/2022/07/Drury-Plaza-Hotel-St-louis-at-the-Arch-.jpeg');
+}
+#img_hotel_9 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/Pear-Tree-Inn-St-Louis-Near-Union-Station-.jpeg');
+}
+#img_hotel_10 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/St.-Louis-Union-Station-Hotel-Curio-Collection-by-Hilton-.jpeg');
+}
+#img_hotel_11 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/The-WestinstLouis.jpeg');
+}
+#img_hotel_12 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/courtyard_convention.jpg');
+}
+#img_hotel_13 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/embassy_suites.jpg');
+}
+#img_hotel_14 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/hampton_inn.jpg');
+}
+#img_hotel_15 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/hilton_arch.jpg');
+}
+#img_hotel_16 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/autograph_collection.jpg');
+}
+#img_hotel_17 {
+	background-image: url('https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/hotels-indigo.jpg');
+}
+/* ----------------- Destination ----------------*/
+#destination {
+	padding-bottom: 6em;
+}
+#destination img {
+	object-fit: cover;
+}
+.arch_img {
+	background-image: url('https://monations.com/wp-content/uploads/2021/09/Explore-St-Louis.jpg');
+	width: 100%;
+	height: 33vw;
+}
+.arch_img p {
+	padding: 1.4em 1.6em;
+}
+.FTP_icon {
+	width: 70%;
+	height: auto;
+}
+.under_effect {
+	text-decoration: none !important;
+	letter-spacing: 0.05em;
+	position: relative;
+	transition: all 0.3s;
+}
+.under_effect:before {
+	content: "";
+	width: 100%;
+	height: 0.08em;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: var(--light_blue);
+	transition: all 0.3s;
+}
+#offTravel h3 {
+	font-size: 3em;
+	color: #4d418a;
+	margin-top: 0;
+	margin-bottom: 0.7em;
+	line-height: 1.1em;
+}
+.travel_icon1 {
+	width: 2em;
+}
+.travel_icon2 {
+	width: 3em;
+}
+.travel_icon3 {
+	width: 3.1em;
+}
+.travel_icon4 {
+	width: 3.5em;
+}
+.travel_row {
+	margin-bottom: 2em;
+}
+a.travel_row {
+	cursor: pointer;
+}
+.travel_row>div:first-child {
+	width: 22%;
+}
+.travel_row>div:last-child {
+	width: 78%;
+}
+/* ----------------- Event Venue ----------------*/
+#venue img {
+	width: 100%;
+	height: 33vw;
+	object-fit: cover;
+}
+#venue {
+	padding: 6em 0;
+}
+/* ----------------- Footer ----------------*/
+#footer_mu22 {
+	padding-top: 5em;
+	border-bottom: solid 4px #34e7eb;
+}
+#footer_mu22 .mu22_logo {
+	margin-bottom: 30px;
+}
+#footer_mu22>div:first-child {
+	padding-bottom: 6em;
+}
+#footer_mu22 p, #footer_mu22 .col_20 a {
+	color: #fff;
+	font-size: 1em;
+}
+#footer_mu22 .col_20 a {
+	margin-bottom: 0.7em !important;
+	display: block;
+	letter-spacing: 0.05em;
+}
+.s_prueba {
+	height: 100vh;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	font-family: "SuisseIntl-Bold";
+	color: #fff;
+	font-size: clamp(2em, 8vw, 5em);
+}
+header, header * {
+	display: none;
+}
+.b_color {
+	background-color: var(--dark_blue_bold) !important;
+}
+@media screen and (max-width:992px) {
+}
+@media screen and (max-width:700px) {
+	.hotel_rate>span{
+		margin-top: .3rem;
+		display: inline-block;
+   }
+	.a_s_flex_start_mobile { align-self: flex-start; }
+
+	.attend_row:not(.last) { padding-bottom: 9rem; }
+
+	.category_agenda_img { margin: 1em 0; }
+
+	.width_margin_mobile_big { width: 85% !important; }
+
+	.width_margin_mobile_small { width: 90% !important; }
+
+	.p_medium { font-size: 0.95em !important; }
+
+	html { overflow-x: hidden !important; }
+
+	#header_mu22 .mu22_logo, #footer_mu22 .mu22_logo { width: 9em; }
+
+	.monations_btn { font-size: .75em !important; }
+
+	#scrollBtn a {
+		width: 100%;
+		padding: 1em 0 1em;
+		font-size: .8em !important;
+   }
+	#scrollBtn {
+		position: fixed;
+		background-color: var(--dark_blue_bold);
+		bottom: 0;
+		max-height: 0;
+		width: 100%;
+		z-index: 1;
+		transition: all .25s ease-in-out;
+   }
+	#scrollBtn.active {
+		max-height: 10em;
+		padding: 5vw;
+		z-index: 20;
+   }
+	#scrollBtn.active div {
+		background-color: #fff;
+   }
+	#currentLocation {
+		margin-left: 1em !important;
+		margin-right: 1em !important;
+   }
+	#second_menu>div ul {
+		border-bottom: 5px solid var(--light_blue);
+		height: 3.5em;
+		overflow-x: hidden;
+   }
+	#second_menu a:hover, #second_menu .active {
+		border-bottom: none;
+   }
+	#second_menu a {
+		padding: 0;
+		border: none;
+   }
+	#second_menu li {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		transition: all .2s ease-in-out;
+   }
+	#counterBox, #counterMarkers {
+		min-width: 0;
+   }
+	#counterBox {
+		padding: 1.5em 1em 1em;
+   }
+	#counterMarkers {
+		padding: 1em 1em 0;
+   }
+	#counterMarkers p {
+		font-size: 0.7em !important;
+   }
+   /* switch button */
+	.switch {
+		width: 50px;
+		height: 25px;
+		margin-left: 10px;
+   }
+	.slider:before {
+		height: 25px;
+		width: 25px;
+   }
+	.switch input:checked + .slider:before {
+		-webkit-transform: translateX(26px);
+		-ms-transform: translateX(26px);
+		transform: translateX(26px);
+   }
+	#monationsMode p{
+		font-size: 1.3em;
+   }
+	.attend_row img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		padding: 0px;
+   }
+	.attend_row li {
+		flex-shrink: 0;
+		width: 80%;
+		padding-right: 1rem;
+   }
+	.attend_module_t {
+		padding: 0 1.5em;
+   }
+	.text_module_hotel {
+		padding: 1em 1em;
+   }
+	#attend h3.col_70 {
+		width: 80%;
+   }
+	#attend p.col_50, #venue p.col_40 {
+		width: 80%;
+   }
+	.loop_holder p {
+		font-size: 1.8em;
+   }
+	.luis_img, .ray_img {
+		margin-bottom: 2em;
+   }
+	#myModal {
+		display: none;
+		position: fixed;
+		z-index: 20;
+		align-items: center;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(0, 0, 0, 0.4);
+   }
+	.tab_content {
+		margin-top: 5em;
+		margin-bottom: 5em;
+		flex-direction: column;
+		background-color: #fff;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+   }
+	.tab_content.active {
+		display: flex;
+   }
+	.agenda_days {
+		background-color: #f9f9f9;
+		padding: 1.5em 0;
+   }
+	.agenda_days>div:not(:first-child) {
+		margin-top: 1em;
+   }
+	.days_mobile {
+		box-shadow: 1px 0px 2px 1px #d2d0e48a;
+		pointer-events: none;
+   }
+	.W_module_tab {
+		background-color: #fff;
+		padding: 1.5em;
+		flex-grow: 3;
+		width: 77%;
+   }
+	.W_module_tab h3 {
+		font-size: 1.2em;
+		margin-top: 0;
+		letter-spacing: 0.04em;
+		margin-bottom: 0.4em;
+   }
+	.day_label {
+		background-color: var(--light_blue);
+		width: 22%;
+		text-align: center;
+   }
+	.agenda_row {
+		border-left: 5px solid var(--light_blue);
+   }
+	.agenda_row>div:first-child {
+		width: 100%;
+		flex-direction: row;
+		border-left: none;
+		padding-right: 1em;
+		padding-left: 1em;
+		border-bottom: 1px solid #ededed;
+		align-items: center;
+		justify-content: space-between;
+   }
+	.event_name {
+		width: 50%;
+   }
+	.agenda_row>div:not(:first-child) {
+		width: 50%;
+		border-left: none;
+		margin: 0;
+		justify-content: flex-start;
+   }
+	.agenda_row>div:last-child {
+		border-left: 3px solid #ededed;
+   }
+	.body_tab {
+		min-height: auto;
+   }
+	.head_tab {
+		padding: 0;
+   }
+	.head_tab>div {
+		align-items: stretch;
+   }
+	.close_agenda {
+		font-size: 35px;
+		cursor: pointer;
+		font-family: 'SuisseIntl-Light';
+   }
+	.off_speakers, #off_hotels {
+		width: 100%;
+		padding: 35px 35px 0 35px;
+   }
+	.speaker1 {
+		background-image: url(https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/tony-Robbins.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: 70% 20%;
+   }
+	.speaker2 {
+		background-image: url(https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/todd-duncan.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: 30% 20%;
+   }
+	.label_hotel { font-size: 0.65em; }
+
+	.image_module_hotel { height: 12em; }
+
+	#soldOut_hotels .image_module_hotel:before { font-size: 1.1rem; }
+
+	.hotel_name { font-size: 0.9em; }
+	.hotel_address { font-size: 0.75em; }
+	.hotel_rate { font-size: 0.6em; }
+
+	.event_time { font-size: 0.93em; }
+
+	.agenda_row>div { padding: 1em 1em 1em 1em; }
+
+	.agenda_row>div:last-child { border-left: 1px solid #ededed; }
+
+	.agenda_row:not(:first-child) {
+		margin-top: 0.7em;
+		font-size: 0.8em;
+   }
+	#second_menu a { font-size: 0.8em; }
+
+	.attend_module_t div {
+		height: 1.8em;
+		width: 1.8em;
+		font-size: 3em;
+   }
+	#stadium .grad_bkgnd {
+		min-height: 80vh;
+		background-image: url(https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/spark-monations-min.png), url(https://monatglobal.com/au/wp-content/uploads/sites/12/2022/07/Monations_main-bakgnd.jpg);
+		background-size: 70%, 250%;
+		background-position: 170% 10%, top center;
+   }
+	.body_tab, .container_hotels { padding: 1em 0 1.5em; }
+	.speaker_name { margin-top: 40vh; }
+	.speaker_module {
+		height: 55vh;
+		width: 100vw;
+   }
+	.arch_img p { padding: 1em; }
+
+	#destination img, #destination .arch_img, #venue img { height: 17em; }
+
+	#footer_mu22 p { font-size: 0.7em !important; }
+	#footer_mu22 { padding-top: 3em; }
+	#footer_mu22>div:first-child { padding-bottom: 3em; }
+
+	.grad_position_4 { width: clamp(12.3em, 20vw, 1000em); }
+	.grad_position_6 { width: clamp(10.3em, 20vw, 1000em); }
+	
+}
